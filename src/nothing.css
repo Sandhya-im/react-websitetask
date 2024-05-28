@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Raleway Dots", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-style: normal;
+  margin-left: 50px;
+}
+a {
+  margin-left: 40px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: rgb(150, 143, 143);
+  font-size: 22px;
+}
+.logo {
+  margin-right: 400px;
+}
+
+.header1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content1 {
+  background-color: black;
+  width: 100vw;
+  height: 600px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#ntgImg img {
+  margin-left: 30%;
+  margin-top: 30px;
+}
+
+.content1_2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.quotes {
+  border: 2px solid black;
+  width: 300px;
+  height: 100px;
+  font-size: 20px;
+}
+
+.content2 {
+  margin: 10px 15%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "a b c d"
+    "a e f d"
+    "g h i j";
+}
+.box {
+  border: 1px solid black;
+  border-radius: 5%;
+  color: white;
+  padding: 20px;
+}
+.box1 {
+  grid-area: a;
+  width: 320px;
+  height: 600px;
+  background-color: black;
+}
+
+.box2 {
+  grid-area: b;
+  width: 300px;
+  height: 290px;
+  background-color: black;
+}
+
+.box3 {
+  grid-area: c;
+  width: 300px;
+  height: 290px;
+  background-color: black;
+}
+
+.box4 {
+  grid-area: d;
+  width: 300px;
+  height: 600px;
+  background-color: red;
+}
+
+.box5 {
+  grid-area: e;
+  width: 300px;
+  height: 290px;
+  background-color: rgb(245, 242, 242);
+  color: black;
+}
+
+.box6 {
+  grid-area: f;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+
+.box7 {
+  grid-area: g;
+  width: 320px;
+  height: 200px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.box8 {
+  grid-area: h;
+  width: 300px;
+  height: 200px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.box9 {
+  grid-area: i;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(248, 248, 248);
+  color: black;
+}
+
+.box10 {
+  grid-area: j;
+  width: 290px;
+  height: 200px;
+  background-color: black;
+}
+
+/* _______________MEDIA QUERY___________ */
+@media only screen and (max-width: 1000px), (max-width: 600px) {
+  body {
+    width: 100vw;
+  }
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: black;
+    /* width: 100%; */
+    height: 1200px;
+    margin-top: 20px;
+  }
+  #ntgImg img {
+    width: 200px;
+    height: 300px;
+    /* margin-right: 40px; */
+  }
+  .content1_2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .quotes {
+    border: 2px solid white;
+    width: 300px;
+    height: 140px;
+    border-radius: 20%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .content2 {
+    margin: 10px 15%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 10px; */
+    grid-template-areas:
+      "a c "
+      "a e"
+      "b b"
+      "f d"
+      "g d"
+      "h j"
+      "i i";
+  }
+  .box {
+    border: 1px solid black;
+    border-radius: 5%;
+    color: white;
+    padding: 20px;
+  }
+  .box1 {
+    grid-area: a;
+    width: 270px;
+    height: 600px;
+    background-color: black;
+  }
+  .box1 img {
+    width: 140px;
+  }
+
+  .box2 {
+    grid-area: b;
+    width: 580px;
+    height: 200px;
+    background-color: black;
+  }
+
+  .box3 {
+    grid-area: c;
+    width: 270px;
+    height: 290px;
+    background-color: black;
+  }
+  .box3 img {
+    width: 240px;
+    height: 160px;
+  }
+
+  .box4 {
+    grid-area: d;
+    width: 270px;
+    height: 600px;
+    background-color: red;
+  }
+
+  .box4 img {
+    width: 200px;
+  }
+
+  .box5 {
+    grid-area: e;
+    width: 270px;
+    height: 290px;
+    background-color: rgb(245, 242, 242);
+    color: black;
+  }
+
+  /* .box5 img {
+    width: 120px;
+    height: 100px;
+  } */
+
+  .box6 {
+    grid-area: f;
+    width: 270px;
+    height: 320px;
+    background-color: black;
+    padding: 10px;
+  }
+
+  .box6 img {
+    width: 120px;
+  }
+
+  .box7 {
+    grid-area: g;
+    width: 270px;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .box8 {
+    grid-area: h;
+    width: 270px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .box9 {
+    grid-area: i;
+    width: 580px;
+    height: 150px;
+    background-color: rgb(248, 248, 248);
+    color: black;
+  }
+
+  .box10 {
+    grid-area: j;
+    width: 270px;
+    height: 200px;
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    width: 100vw;
+  }
+  .content1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: black;
+    height: 1200px;
+    margin-top: 20px;
+  }
+
+  .content1_2 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .quotes {
+    border: 2px solid white;
+    width: 300px;
+    height: 140px;
+    border-radius: 10%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .content2 {
+    margin: 10px 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 10px; */
+    grid-template-areas:
+      "a c "
+      "a e"
+      "b b"
+      "f d"
+      "g d"
+      "h j"
+      "i i";
+  }
+  .box {
+    border: 1px solid black;
+    border-radius: 5%;
+    color: white;
+    padding: 20px;
+  }
+  .box1 {
+    grid-area: a;
+    width: 170px;
+    height: 600px;
+    background-color: black;
+  }
+  .box1 img {
+    width: 140px;
+  }
+
+  .box2 {
+    grid-area: b;
+    width: 350px;
+    height: 200px;
+    background-color: black;
+  }
+
+  .box3 {
+    grid-area: c;
+    width: 170px;
+    height: 290px;
+    background-color: black;
+  }
+  .box3 img {
+    width: 140px;
+    height: 160px;
+  }
+
+  .box4 {
+    grid-area: d;
+    width: 170px;
+    height: 600px;
+    background-color: red;
+  }
+
+  .box4 img {
+    width: 140px;
+  }
+
+  .box5 {
+    grid-area: e;
+    width: 170px;
+    height: 290px;
+    background-color: rgb(245, 242, 242);
+    color: black;
+  }
+
+  .box5 img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .box6 {
+    grid-area: f;
+    width: 170px;
+    height: 320px;
+    background-color: black;
+    padding: 10px;
+  }
+
+  .box6 img {
+    width: 120px;
+  }
+
+  .box7 {
+    grid-area: g;
+    width: 170px;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .box8 {
+    grid-area: h;
+    width: 170px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .box9 {
+    grid-area: i;
+    width: 350px;
+    height: 200px;
+    background-color: rgb(248, 248, 248);
+    color: black;
+  }
+
+  .box10 {
+    grid-area: j;
+    width: 170px;
+    height: 200px;
+    background-color: black;
+  }
+}
